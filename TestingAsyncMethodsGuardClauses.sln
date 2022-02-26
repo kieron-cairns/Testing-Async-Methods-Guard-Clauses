@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingAsyncMethodsGuardClauses", "TestingAsyncMethodsGuardClauses\TestingAsyncMethodsGuardClauses.csproj", "{3845E0F8-3471-439D-B28E-9FD12F882F0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{C5D752BA-807C-49CE-B63B-9E154DBE67FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3845E0F8-3471-439D-B28E-9FD12F882F0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3845E0F8-3471-439D-B28E-9FD12F882F0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3845E0F8-3471-439D-B28E-9FD12F882F0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5D752BA-807C-49CE-B63B-9E154DBE67FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5D752BA-807C-49CE-B63B-9E154DBE67FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5D752BA-807C-49CE-B63B-9E154DBE67FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5D752BA-807C-49CE-B63B-9E154DBE67FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
