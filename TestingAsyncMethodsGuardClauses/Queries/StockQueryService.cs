@@ -14,7 +14,7 @@ namespace TestingAsyncMethodsGuardClauses.Queries
             this.stockRepository = stockRepository;
         }
 
-        public async Task<List<StockItem>> GetStockItemById(int id)
+        public async Task<List<StockItem>> GetStockItemById(string id)
         {
             if (id == null) throw new ArgumentNullException(nameof(id));
 

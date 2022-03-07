@@ -14,7 +14,7 @@ namespace TestingAsyncMethodsGuardClauses.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<List<StockItem>>> Get(int id)
+        public async Task<ActionResult<List<StockItem>>> Get(string id)
         {
             var result = await this.stockQueryService.GetStockItemById(id);
 

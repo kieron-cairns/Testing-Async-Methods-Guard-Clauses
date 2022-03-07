@@ -4,6 +4,6 @@ namespace TestingAsyncMethodsGuardClauses.Queries
 {
     public interface IStockQueryService
     {
-        Task<List<StockItem>> GetStockItemById(int id);
+        Task<List<StockItem>> GetStockItemById(string id);
     }
 }

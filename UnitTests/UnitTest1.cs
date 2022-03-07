@@ -39,21 +39,21 @@ namespace UnitTests
 
             var expected = new List<StockItem>()
             {
-                new StockItem {Id = 1, Name = "MacBook Pro 13inch", Quantity = 10, Price = 1300.0}
+                new StockItem {Id = "1", Name = "MacBook Pro 13inch", Quantity = 10, Price = 1300.0}
             };
 
-            int expectedId = 1;
             string expectedName = "MacBook Pro 13inch";
+            string id = "1";
 
             //Act
-            var sut = testBuilder.WithStockItemList(expected, 1).BuildSut();
+            var sut = testBuilder.WithStockItemList(expected, id).BuildSut();
 
-            var result = await sut.GetStockItemById(1);
+            var result = await sut.GetStockItemById(id);
 
             //Assert
             result.Should().BeOfType<List<StockItem>>();
             result.Should().HaveCount(1);
-            result[0].Id.Should().Be(expectedId);
+            result[0].Id.Should().Be(id);
             result[0].Name.Should().Be(expectedName);
         }
 
@@ -73,7 +73,7 @@ namespace UnitTests
                 return new StockQueryService(this.mockStockRepository.Object);
             }
 
-            public TestFixtureBuilder WithStockItemList(List<StockItem> stockItems, int id)
+            public TestFixtureBuilder WithStockItemList(List<StockItem> stockItems, string id)
             {
                 var mockStockItemList = new Mock<Task<List<StockItem>>>();
 
